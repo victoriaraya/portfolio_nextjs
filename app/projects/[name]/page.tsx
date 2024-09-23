@@ -1,20 +1,21 @@
-import { useParams, Navigate, Link } from "react-router-dom";
-import { getProject } from "../projects";
+// import { useParams, Navigate, Link } from "react-router-dom";
+import Link from "next/link";
+import { getProject } from "@/components/projects";
 import { GoArrowUpRight } from "react-icons/go";
 
 const ProjectDetails = ({ params }) => {
   //   const { name } = useParams();
   const project = getProject(params.name);
 
-  if (!project) {
-    return <Navigate to="/not-found" />;
-  }
+  //   if (!project) {
+  //     return <Navigate to="/not-found" />;
+  //   } fix later with react routing
 
   return (
     <div className="min-h-screen w-screen mt-0 sm:pt-9 px-4 sm:px-6 bg-[#b291a4] text-white text-lg sm:text-2xl flex flex-col dark:bg-[#4a3f47] dark:text-gray-200">
       <p className="flex justify-between z-10 mb-1 sm:-mt-3 -ml-2 sm:-ml-3">
         <Link
-          to="/projects"
+          href="/projects"
           className="hover:[text-shadow:1px_1px_3px_white] dark:hover:[text-shadow:1px_1px_3px_black]"
         >
           Go back
@@ -36,7 +37,7 @@ const ProjectDetails = ({ params }) => {
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            xmlns:svgjs="http://svgjs.dev/svgjs"
+            xmlnsSvgjs="http://svgjs.dev/svgjs"
             viewBox="0 0 800 800"
             width="600"
             height="600"

@@ -1,5 +1,5 @@
 import ExpertiseTile from "@/components/ExpertiseTile";
-import { expertiseList } from "@/components/Expertise";
+import { expertiseList } from "@/components/expertise";
 
 const Expertise = () => {
   return (
