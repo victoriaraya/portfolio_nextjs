@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Gruppo } from "next/font/google";
 import "./globals.css";
+import NavBar from "@/components/NavBar";
 
 const gruppo = Gruppo({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${gruppo.className} bg-[#b291a4] dark:bg-[#4a3f47]`}>
+        <NavBar />
         {children}
       </body>
     </html>

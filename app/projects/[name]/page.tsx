@@ -1,5 +1,6 @@
 // import { useParams, Navigate, Link } from "react-router-dom";
 import Link from "next/link";
+import Image from "next/image";
 import { getProject } from "@/components/projects";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -22,13 +23,13 @@ const ProjectDetails = ({ params }) => {
         </Link>
 
         <a
-          href={`${project.url}`}
+          href={`${project?.url}`}
           target="_blank"
           rel="noopener noreferrer"
           className="relative inline-flex items-center gap-1 -mr-2 sm:-mr-3 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:w-full"
         >
           <GoArrowUpRight className="text-lg sm:text-xl" />
-          {project.url.includes("github") ? "See code" : "See website"}
+          {project?.url.includes("github") ? "See code" : "See website"}
         </a>
       </p>
       <div className="relative flex flex-col sm:grid sm:grid-cols-2 sm:grid-rows-[0.5fr_0.5fr_1fr] gap-2">
@@ -37,7 +38,7 @@ const ProjectDetails = ({ params }) => {
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            xmlnsSvgjs="http://svgjs.dev/svgjs"
+            xmlnssvgjs="http://svgjs.dev/svgjs"
             viewBox="0 0 800 800"
             width="600"
             height="600"
@@ -84,13 +85,13 @@ const ProjectDetails = ({ params }) => {
             </defs>
           </svg>
           <h1 className="absolute text-5xl text-center sm:text-8xl mt-14 sm:-mt-24 [text-shadow:2px_2px_3px_black] dark:[text-shadow:2px_2px_2px_rgba(0,0,0,0.8)]">
-            {project.name}
+            {project?.name}
           </h1>
         </div>
         <div className="flex flex-col pt-24 sm:pt-10 items-center sm:col-span-2 pb-3 sm:pb-5">
           <span className="pb-2">Tools used:</span>
           <span className="flex flex-wrap gap-2 sm:gap-3 justify-center">
-            {project.technologies.map((tech) => (
+            {project?.technologies.map((tech) => (
               <span
                 className="bg-slate-300 bg-opacity-35 rounded-md p-1 dark:bg-opacity-25"
                 key={tech}
@@ -101,18 +102,20 @@ const ProjectDetails = ({ params }) => {
           </span>
         </div>
         <p className="col-span-2 p-3 shadow-[1px_1px_7px_7px_white] rounded-xl mt-8 mx-2 sm:mx-10 text-center dark:shadow-[1px_1px_7px_7px_gray]">
-          {project.description}
+          {project?.description}
         </p>
       </div>
       <div className="flex flex-wrap gap-4 pt-10 sm:pt-14 pb-3 sm:px-5">
-        {project.name.includes("Email")
+        {project?.name.includes("Email")
           ? null
-          : Object.values(project.images).map((image, idx) =>
+          : project.images.map((image, idx) =>
               idx == 0 ? null : (
-                <img
-                  src={image}
+                <Image
+                  src={`/images/${image}.png`}
                   alt={`${project.name} page`}
                   key={idx}
+                  width={550}
+                  height={400}
                   className="rounded-sm border-2 border-white w-full sm:w-auto dark:border-gray-600 dark:grayscale dark:brightness-75"
                 />
               )

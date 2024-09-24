@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const ProjectTile = (props) => {
@@ -5,12 +6,13 @@ const ProjectTile = (props) => {
 
   return (
     <div className="relative text-white group dark:text-gray-100">
-      <Link href={`/projects/${project.name}`}>
+      <Link href={`/projects/${project.urlName}`}>
         {project.name.includes("Email") ? (
-          <img
-            src={project.images[project.imageName]}
+          <Image
+            src={`/images/${project.images[0]}.png`}
             alt={`${project.name}`}
-            loading="lazy"
+            width={550}
+            height={400}
             className="transition-all duration-200 ease-in-out transform group-hover:scale-95 rounded-sm group-hover:bg-black group-hover:opacity-60 dark:group-hover:bg-gray-800 dark:grayscale dark:brightness-75"
           />
         ) : (
