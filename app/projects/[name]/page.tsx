@@ -1,16 +1,15 @@
-// import { useParams, Navigate, Link } from "react-router-dom";
+import { redirect } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { getProject } from "@/components/projects";
 import { GoArrowUpRight } from "react-icons/go";
 
 const ProjectDetails = ({ params }) => {
-  //   const { name } = useParams();
   const project = getProject(params.name);
 
-  //   if (!project) {
-  //     return <Navigate to="/not-found" />;
-  //   } fix later with react routing
+  if (!project) {
+    redirect("/not-found");
+  }
 
   return (
     <div className="min-h-screen w-screen mt-0 sm:pt-9 px-4 sm:px-6 bg-[#b291a4] text-white text-lg sm:text-2xl flex flex-col dark:bg-[#4a3f47] dark:text-gray-200">
@@ -114,9 +113,10 @@ const ProjectDetails = ({ params }) => {
                   src={`/images/${image}.png`}
                   alt={`${project.name} page`}
                   key={idx}
-                  width={550}
-                  height={400}
-                  className="rounded-sm border-2 border-white w-full sm:w-auto dark:border-gray-600 dark:grayscale dark:brightness-75"
+                  width={950}
+                  height={600}
+                  quality={100}
+                  className="rounded-sm border-2 border-white sm:w-full dark:border-gray-600 dark:grayscale dark:brightness-75"
                 />
               )
             )}

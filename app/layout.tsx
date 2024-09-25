@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import { Gruppo } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
@@ -9,17 +8,6 @@ const gruppo = Gruppo({
   display: "swap",
   variable: "--font-gruppo",
   weight: "400",
-});
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
 });
 
 export const metadata: Metadata = {
