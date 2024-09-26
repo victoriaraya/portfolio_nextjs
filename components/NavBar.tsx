@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { DarkmodeSwitch } from "./DarkmodeSwitch";
+import { DarkmodeSwitch } from "./DarkModeSwitch";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);

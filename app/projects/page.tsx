@@ -1,5 +1,5 @@
 import ProjectTile from "@/components/ProjectTile";
-import { ProjectList } from "@/components/projects";
+import { ProjectList } from "@/components/Projects";
 
 const Projects = () => {
   return (

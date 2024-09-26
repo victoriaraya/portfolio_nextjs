@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { getProject } from "@/components/projects";
+import { getProject } from "@/components/Projects";
 import { GoArrowUpRight } from "react-icons/go";
 
 const ProjectDetails = ({ params }) => {
