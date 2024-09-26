@@ -4,7 +4,7 @@ https://victoriaraya.com
 
 ## Description
 
-This is my personal portfolio website that I designed and developed using React. This website showcases my skills, experience, and projects as a software developer. The site is designed to provide potential employers, clients, and collaborators with an overview of my work and get to know me a bit better.
+This is my personal portfolio website that I designed and developed using Next.js. This website showcases my skills, experience, and projects as a software developer. The site is designed to provide potential employers, clients, and collaborators with an overview of my work and get to know me a bit better.
 
 It features dedicated pages for showcasing my projects and highlighting my expertise in various technologies. It also includes an About Me section that offers insight into my background, along with a contact form for easy communication. Built with a responsive design, the site provides a seamless experience across mobile devices, and includes a dark mode toggle for a personalized browsing experience.
 
@@ -21,7 +21,7 @@ It features dedicated pages for showcasing my projects and highlighting my exper
 
 ### Clone this repository
 
-    git clone https://github.com/victoriaraya/portfolio.git
+    git clone https://github.com/victoriaraya/portfolio_nextjs.git
 
 ### Install dependencies
 
