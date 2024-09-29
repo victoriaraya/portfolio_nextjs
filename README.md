@@ -10,7 +10,7 @@ It features dedicated pages for showcasing my projects and highlighting my exper
 
 ## Demo
 
-<!-- ![Portfolio GIF](https://github.com/victoriaraya/groovy/blob/main/public/images/groovy.gif?raw=true) -->
+![Portfolio GIF](https://github.com/victoriaraya/portfolio_nextjs/blob/main/public/images/portfolio.gif?raw=true)
 
 ## Tech Stack
 
