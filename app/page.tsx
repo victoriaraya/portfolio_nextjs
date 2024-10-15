@@ -22,7 +22,7 @@ const Home = () => {
           ♡
         </h2>
       </div>
-      <div className="absolute inset-0 flex justify-center self-end p-1 text-[18px] sm:text-[22px] text-white font-semibold [text-shadow:2px_2px_2px_black] dark:text-gray-100 dark:[text-shadow:2px_2px_2px_rgba(0,0,0,0.8)]">
+      <div className="absolute bottom-0 left-0 right-0 mx-auto flex justify-center p-1 text-[18px] sm:text-[22px] text-white font-semibold [text-shadow:2px_2px_2px_black] dark:text-gray-100 dark:[text-shadow:2px_2px_2px_rgba(0,0,0,0.8)]">
         Made by Victoria Raya
       </div>
     </div>
