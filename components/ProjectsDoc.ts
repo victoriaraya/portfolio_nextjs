@@ -5,7 +5,7 @@ const ProjectList = [
     description:
       "Groovy is an interactive music website where users can explore some of my favorite artists, listen to their music, stay updated on their upcoming shows, and chat with an AI assistant to learn more about them. I created this app to deepen my experience with React, Next.js, AI, and external APIs. I wanted to build a project that integrates my passion for music, offering everything I'd want to know about an artist in one convenient place. This project not only highlights my technical skills but also gives users a glimpse into my personality through the music I love.",
     images: ["groovy", "groovy1", "groovy2", "groovy3"],
-    imageName: "groovy",
+    imageName: "groovy-compressed",
     category: "Web Development",
     technologies: [
       "Typescript",
@@ -35,7 +35,7 @@ const ProjectList = [
       "victoriashop5",
       "victoriashop6",
     ],
-    imageName: "victorias-shop",
+    imageName: "victorias-shop-compressed",
     category: "Web Development",
     technologies: [
       "JavaScript",

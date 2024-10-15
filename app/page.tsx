@@ -7,7 +7,7 @@ const Home = () => {
         muted
         loop
       >
-        <source src="/images/orchids.mp4" type="video/mp4" />
+        <source src="/images/orchids-compressed.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white dark:text-gray-100">
         <h1 className="text-4xl text-center sm:text-5xl font-black px-1 sm:px-0 [text-shadow:2px_2px_2px_black] dark:[text-shadow:2px_2px_2px_rgba(0,0,0,0.8)]">
