@@ -21,6 +21,7 @@ const ProjectTile = (props) => {
             autoPlay
             muted
             loop
+            playsInline
             className="transition-all duration-200 ease-in-out transform group-hover:scale-95 rounded-sm group-hover:bg-black group-hover:opacity-60 dark:group-hover:bg-gray-800 dark:grayscale dark:brightness-75"
           >
             <source

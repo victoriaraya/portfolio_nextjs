@@ -6,6 +6,7 @@ const Home = () => {
         autoPlay
         muted
         loop
+        playsInline
       >
         <source src="/images/orchids-compressed.mp4" type="video/mp4" />
       </video>
