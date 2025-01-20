@@ -11,10 +11,10 @@ const Home = () => {
         <source src="/images/orchids-compressed.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white dark:text-gray-100">
-        <h1 className="text-4xl text-center sm:text-5xl font-black px-1 sm:px-0 [text-shadow:2px_2px_2px_black] dark:[text-shadow:2px_2px_2px_rgba(0,0,0,0.8)]">
+        <h1 className="text-4xl text-center sm:text-5xl font-black px-20 md:px-0 [text-shadow:2px_2px_2px_black] dark:[text-shadow:2px_2px_2px_rgba(0,0,0,0.8)]">
           Hello, my name is Victoria Raya
         </h1>
-        <h3 className="text-2xl text-center sm:text-3xl mt-3 sm:mt-5 px-2 sm:px-0 [text-shadow:2px_2px_2px_black] dark:[text-shadow:2px_2px_2px_rgba(0,0,0,0.8)]">
+        <h3 className="text-2xl text-center sm:text-3xl mt-3 sm:mt-5 px-10 sm:px-8 md:px-5 [text-shadow:2px_2px_2px_black] dark:[text-shadow:2px_2px_2px_rgba(0,0,0,0.8)]">
           I'm the creative, hardworking, positive software engineer of your
           dreams!
         </h3>

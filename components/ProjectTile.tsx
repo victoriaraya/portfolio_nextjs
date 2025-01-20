@@ -22,7 +22,11 @@ const ProjectTile = (props) => {
             muted
             loop
             playsInline
-            className="transition-all duration-200 ease-in-out transform group-hover:scale-95 rounded-sm group-hover:bg-black group-hover:opacity-60 dark:group-hover:bg-gray-800 dark:grayscale dark:brightness-75"
+            className={
+              project.name.includes("Meaningful")
+                ? "transition-all duration-200 ease-in-out transform group-hover:scale-95 rounded-sm group-hover:bg-black group-hover:opacity-60 dark:group-hover:bg-gray-800 dark:grayscale dark:brightness-75"
+                : "transition-all duration-200 ease-in-out transform group-hover:scale-95 rounded-sm group-hover:bg-black group-hover:opacity-60 dark:group-hover:bg-gray-800 dark:grayscale dark:brightness-75"
+            }
           >
             <source
               src={`/images/${project.imageName}.mp4`}

@@ -42,7 +42,7 @@ const ProjectDetails = ({ params }) => {
             width="600"
             height="600"
             opacity="1"
-            className="absolute mt-44 sm:mt-32 w-3/4 dark:opacity-80"
+            className="absolute mt-44 sm:mt-52 w-3/4 dark:opacity-80"
           >
             <g
               strokeWidth="2"
@@ -83,11 +83,17 @@ const ProjectDetails = ({ params }) => {
               </linearGradient>
             </defs>
           </svg>
-          <h1 className="absolute text-5xl text-center sm:text-8xl mt-14 sm:-mt-24 [text-shadow:2px_2px_3px_black] dark:[text-shadow:2px_2px_2px_rgba(0,0,0,0.8)]">
+          <h1
+            className={
+              project?.name.includes("Meaningful")
+                ? "absolute text-4xl text-center pb-3 sm:text-7xl lg:text-8xl mt-16 sm:mt-0 [text-shadow:2px_2px_3px_black] dark:[text-shadow:2px_2px_2px_rgba(0,0,0,0.8)]"
+                : "absolute text-5xl text-center sm:text-8xl mt-16 sm:mt-0 [text-shadow:2px_2px_3px_black] dark:[text-shadow:2px_2px_2px_rgba(0,0,0,0.8)]"
+            }
+          >
             {project?.name}
           </h1>
         </div>
-        <div className="flex flex-col pt-24 sm:pt-10 items-center sm:col-span-2 pb-3 sm:pb-5">
+        <div className="flex flex-col pt-28 sm:pt-20 items-center sm:col-span-2 pb-3 sm:pb-5">
           <span className="pb-2">Tools used:</span>
           <span className="flex flex-wrap gap-2 sm:gap-3 justify-center">
             {project?.technologies.map((tech) => (

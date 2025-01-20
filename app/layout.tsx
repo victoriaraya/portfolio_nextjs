@@ -7,7 +7,7 @@ const gruppo = Gruppo({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-gruppo",
-  weight: "400",
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {

@@ -1,5 +1,23 @@
 const ProjectList = [
   {
+    name: "Meaningful EndCare",
+    urlName: "meaningful-endcare",
+    description:
+      "This project was created with love and care for a local business dedicated to supporting individuals and families during the end-of-life journey. The site is designed to educate visitors about what a death doula is, highlight the benefits of these services, and guide clients in connecting with the doula for support during a meaningful and sensitive time. I designed the website, created a custom logo, and developed the site using Next.js to deliver a comfortable and engaging user experience.",
+    images: [
+      "meaningfulendcare",
+      "meaningfulendcare1",
+      "meaningfulendcare2",
+      "meaningfulendcare3",
+      "meaningfulendcare4",
+      "meaningfulendcare5",
+    ],
+    imageName: "meaningful-endcare-compressed",
+    category: "Web Development",
+    technologies: ["Typescript", "Next.js", "Tailwind", "Git", "Vercel"],
+    url: "https://meaningfulendcare.com/",
+  },
+  {
     name: "Groovy",
     urlName: "groovy",
     description:
